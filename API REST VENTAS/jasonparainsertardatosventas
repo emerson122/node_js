@@ -1,0 +1,14 @@
+{
+    "COD_INV": 2,
+    "COD_PERSONA": 2,
+    "COD_PRODUCTO": 2,
+    "NOM_PRODUCTO": "'VICTORIA'",
+    "CANT_PRODUCTO": 1,
+    "PREC_UNITARIO": 50,
+    "TOTAL_BRUTO": 50,
+    "DESTINO_VENTA": "'TEGUCIGALPA'",
+    "IMPUE_TOTAL": 20,
+    "TOTAL_VENTA": 70,
+    "OPERACION": 1,
+    "FILA": 1
+}

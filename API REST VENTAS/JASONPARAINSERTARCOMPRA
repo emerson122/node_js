@@ -1,0 +1,28 @@
+{
+    "COD_INV": 2,
+    "COD_PERSONA": 2,
+    "COD_PRODUCTO": 2,
+    "NOM_PRODUCTO": "'VICTORIA'",
+    "CANT_PRODUCTO": 1,
+    "PREC_UNITARIO": 50,
+    "TOTAL_BRUTO": 50,
+    "DESTINO_VENTA": "'TEGUCIGALPA'",
+    "IMPUE_TOTAL": 20,
+    "TOTAL_VENTA": 70,
+    "OPERACION": 1,
+    "FILA": 1
+}
+
+{
+        "COD_INV": 1,
+        "COD_EMPRESA": 1,
+        "COD_PRODUCTO": 1,
+        "COD_PERSONA": 1,
+        "NOM_PROD": "'CLAVOS'",
+        "DEST_PROD": "'Uruguay'",
+        "DEST_CLIEN"T: "'Honduras'",
+        "DISP_PROD": 4,
+        "PREC_COMP": 10 ,   
+        "IMPUE_COMP": 20,
+        "TOTAL_COMP": 120,
+    }
