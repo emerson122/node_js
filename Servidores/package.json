@@ -1,0 +1,14 @@
+{
+ 
+  "name": "servidores",
+  "version": "0.0.1",
+  "description": "pruebas",
+  "main": "Servidorcolores.js",
+  "devDependencies": {
+    "colors": "^1.4.0"},
+  "scripts": {
+    
+  },
+  "author": "Emerson Ramos",
+  "license": "ISC"
+}
