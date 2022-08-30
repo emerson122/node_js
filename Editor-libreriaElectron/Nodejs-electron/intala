@@ -1,0 +1,5 @@
+primero instalar electron
+
+npm i electron
+
+npm i marked
