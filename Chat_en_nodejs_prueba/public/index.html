@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Applicacion de chateo</title>
+   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> 
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- contenedor del mensaje-->
+  <div id="chat-container">
+      <!-- mesnsaje enviado-->
+    <div id="chat-window">
+        <!-- vemos los mensajes que estan llegando y enviando -->
+      <div id="output"></div>
+      <!-- para saber si alquien esta escribiendo -->
+      <div id="actions"></div>
+    </div>
+    <!-- ususario y mensaje cajitas y boton para enviar -->
+    <input id="username" type="text" placeholder="username">
+    <input id="message" type="text" placeholder="message">
+    <button id="send">Enviar</button>
+  </div>
+
+ 
+ <script src="/socket.io/socket.io.js"></script>
+  <!--socket.io  aqui le digo que use el archivo de javascript de la misma carpeta -->  
+ <script src="/chat.js"></script>
+</body>
+</html>
