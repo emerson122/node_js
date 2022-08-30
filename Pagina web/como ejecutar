@@ -1,0 +1,5 @@
+abrir una terminal en la carpeta y escribir el siguiente comando:
+
+npm i
+
+leera el package json y instalara las dependecias
