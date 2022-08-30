@@ -1,0 +1,223 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  }
+  .buttons {
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 30px;
+  }
+  .blob-btn {
+    z-index: 1;
+    position: relative;
+    padding: 20px 46px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #b3b3ce;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: color 0.5s;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  /*contorno*/
+  .blob-btn:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #282892;
+    border-radius: 30px;
+  }
+  .blob-btn:after {
+    content: "";
+    z-index: -2;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s 0.2s;
+    border-radius: 30px;
+  }
+  .blob-btn:hover {
+    color: #332e2e;
+    border-radius: 30px;
+  }
+  .blob-btn:hover:after {
+    transition: all 0.3s;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+  }
+  /*color aqui abajo*/
+  .blob-btn__inner {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: #2d3436;
+  }
+  .blob-btn__blobs {
+    position: relative;
+    display: block;
+    height: 100%;
+    filter: url('#goo');
+  }
+  .blob-btn__blob {
+    position: absolute;
+    top: 2px;
+    width: 25%;
+    height: 100%;
+    background: #0505A9;
+    border-radius: 100%;
+    transform: translate3d(0, 150%, 0) scale(1.7);
+    transition: transform 0.45s;
+  }
+  @supports (filter: url('#goo')) {
+    .blob-btn__blob {
+      transform: translate3d(0, 150%, 0) scale(1.4);
+    }
+  }
+  .blob-btn__blob:nth-child(1) {
+    left: 0%;
+    transition-delay: 0s;
+  }
+  .blob-btn__blob:nth-child(2) {
+    left: 30%;
+    transition-delay: 0.08s;
+  }
+  .blob-btn__blob:nth-child(3) {
+    left: 60%;
+    transition-delay: 0.16s;
+  }
+  .blob-btn__blob:nth-child(4) {
+    left: 90%;
+    transition-delay: 0.24s;
+  }
+  .blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.7);
+  }
+  @supports (filter: url('#goo')) {
+    .blob-btn:hover .blob-btn__blob {
+      transform: translateZ(0) scale(1.4);
+    }
+  }
+  
+body{
+    margin: 0;
+    padding: 0;
+    background: #2d3436;
+   
+  }
+
+  
+
+  .progress {
+  background: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 40px;
+  width: 500px;
+}
+
+.progress-value {
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #fff;
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load {
+  0% { width: 0; }
+  100% { width: 68%; }
+}
+  .middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .btn{
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-family: "montserrat";
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #ff7675;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+  }
+  .btn::before{
+    background: #ff7675;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+  
+  .btn1::before{
+    width: 0%;
+    height: 100%;
+  }
+  
+  .btn1:hover::before{
+    width: 100%;
+  }
+  
+  
+  .btn2::before{
+    width: 100%;
+    height: 0%;
+  }
+  .btn2:hover::before{
+    height: 100%;
+  }
+  
+  .btn3::before{
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%,-50%) rotate(45deg);
+  }
+  .btn3:hover::before{
+    height: 380%;
+  }
+  
+  .btn4::before{
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+  }
+  .btn4:hover::before{
+    height: 380%;
+  }
+  

@@ -1,0 +1,16 @@
+{
+  "name": "emer_editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/main.js",
+  "scripts": {
+    "emer": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^17.1.0",
+    "marked": "^4.0.12"
+  }
+}
